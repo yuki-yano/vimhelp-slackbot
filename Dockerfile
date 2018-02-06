@@ -8,7 +8,7 @@ ADD . /app
 
 RUN mkdir -p /app/vim/plugins
 
-RUN apt-get -y update && apt-get -y install vim nodejs locales
+RUN apt-get -y update && apt-get -y install vim locales
 RUN locale-gen ja_JP.UTF-8
 ENV LANG ja_JP.UTF-8
 ENV LC_CTYPE ja_JP.UTF-8
